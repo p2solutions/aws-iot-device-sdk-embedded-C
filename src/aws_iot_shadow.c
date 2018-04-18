@@ -69,7 +69,7 @@ IoT_Error_t aws_iot_shadow_free(AWS_IoT_Client *pClient)
     FUNC_EXIT_RC(rc);
 }
 
-IoT_Error_t aws_iot_shadow_init(AWS_IoT_Client *pClient, ShadowInitParameters_t *pParams) {
+IoT_Error_t aws_iot_shadow_init(AWS_IoT_Client *pClient, const ShadowInitParameters_t *pParams) {
 	IoT_Client_Init_Params mqttInitParams;
 	IoT_Error_t rc;
 

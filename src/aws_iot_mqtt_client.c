@@ -202,7 +202,7 @@ IoT_Error_t aws_iot_mqtt_free(AWS_IoT_Client *pClient)
     FUNC_EXIT_RC(rc);
 }
 
-IoT_Error_t aws_iot_mqtt_init(AWS_IoT_Client *pClient, IoT_Client_Init_Params *pInitParams) {
+IoT_Error_t aws_iot_mqtt_init(AWS_IoT_Client *pClient, const IoT_Client_Init_Params *pInitParams) {
 	uint32_t i;
 	IoT_Error_t rc;
 	IoT_Client_Connect_Params default_options = IoT_Client_Connect_Params_initializer;
